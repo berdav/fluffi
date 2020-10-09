@@ -21,6 +21,8 @@
 # 
 # Author(s): Thomas Riedmaier, Roman Bendt
 
+set -eu
+
 if ! [ -f /.dockerenv ]; then
     echo "This script is meant to be run in a docker container." 1>&2
     exit 1
